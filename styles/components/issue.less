@@ -1,0 +1,183 @@
+.cover {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+}
+
+.issue-featured {
+    background-color: var(--grey-secondary);
+    padding: 4rem;
+}
+
+.issue .issue-image {
+    margin-bottom: 2rem;
+}
+
+.issue .galleys-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.issue .galleys-links a {
+    text-decoration: none;
+    color: var(--dark-primary);
+}
+
+.past-issues a {
+    text-decoration: none;
+}
+
+.past-issue {
+    margin-bottom: 2rem;
+}
+
+.past-issues ul {
+    list-style: none;
+    padding: 0;
+}
+
+.galleys-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.galleys-links li:hover,
+.galleys-links a:hover {
+    text-decoration: underline;
+}
+
+.issue div a img {
+    width: 20px;
+    height: 20px;
+}
+
+.tagline {
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+}
+
+.issue .title {
+    margin-top: 0 !important;
+    line-height: 3.2rem;
+}
+
+.issue .meta {
+    margin-bottom: 2.4rem;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+}
+
+.article-list p {
+    margin: 0;
+}
+
+.article-list li {
+    margin-bottom: 1rem;
+}
+
+.article-list li>p:first-child {
+    font-style: italic;
+}
+
+.article-entry>p:first-of-type {
+    font-style: italic;
+}
+
+.article-entry>p {
+    margin-bottom: 0;
+}
+
+.view-issue>button {
+    background-color: transparent;
+    border: 2px solid var(--gold-secondary);
+    padding: 0.4rem 1.6rem;
+    color: var(--gold-secondary);
+}
+
+.view-issue>button:hover {
+    cursor: pointer;
+    background-color: var(--gold-secondary);
+    color: var(--text-light);
+}
+
+.view-issue>.past {
+    margin-top: 1.6rem;
+}
+
+.past-issue .info .meta p {
+    margin-bottom: 1.6rem;
+}
+
+.issue a,
+.past-issue a {
+    color: var(--text-dark);
+}
+
+.issue a:hover,
+.past-issue a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--gold-secondary);
+}
+
+/* Pagination */
+
+.current {
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.prev {
+    margin-right: 0.8rem;
+}
+
+.next {
+    margin-left: 0.8rem;
+}
+
+@media @desktop {
+
+    .issue {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .issue .info {
+        width: 100%;
+        margin-left: 4.8rem;
+    }
+
+    .issue-featured {
+        padding: 6.4rem !important;
+    }
+
+    .past-issue {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .past-issue .info {
+        width: 100%;
+        margin-left: 4.8rem;
+    }
+
+    .past-issues h3 {
+        margin-top: 0;
+    }
+
+}

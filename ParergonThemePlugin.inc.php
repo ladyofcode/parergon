@@ -1,20 +1,69 @@
 <?php
 import('lib.pkp.classes.plugins.ThemePlugin');
-class ParergonThemePlugin extends ThemePlugin {
+class ParergonThemePlugin extends ThemePlugin
+{
 
     /**
      * Load the custom styles for our theme
      * @return null
      */
-    public function init() {
-        $this->addStyle('stylesheet', 'styles/styles.css');
+    public function init()
+    {
+
+        $this->addMenuArea('primary');
+
+        $this->addStyle('stylesheet', 'styles/index.less');
+
+        HookRegistry::register('TemplateManager::display', array($this, 'getCurrentIssue'));
+    }
+
+    public function getCurrentIssue($hookName, $args)
+    {
+
+        // Retrieve the TemplateManager and the template filename
+        $templateMgr = $args[0];
+        $template = $args[1];
+        $request = $this->getRequest();
+
+        // Don't do anything if we're not loading the right template
+        if ($template != 'frontend/pages/issueArchive.tpl') {
+            return false;
+        }
+
+        // $journal = $request->getJournal();
+
+        $issueDao = DAORegistry::getDAO('IssueDAO');
+        $context = Application::get()->getRequest()->getContext();
+
+        if ($template === 'frontend/pages/issueArchive.tpl') {
+
+            // // Get the current issue
+            $issue = $issueDao->getCurrent($context->getId());
+
+            // // Assign the issue to the template
+            $templateMgr->assign('currentIssue', $issue);
+        } else {
+            $issue = $templateMgr->getTemplateVars('issue');
+        }
+
+        // Get the journal
+        // $context = Application::get()->getRequest()->getContext();
+
+        // // Get the current issue
+        // $issue = $issueDao->getCurrent($context->getId());
+
+        // // Assign the issue to the template
+        // $templateMgr->assign('currentIssue', $issue);
+
+        return false;
     }
 
     /**
      * Get the display name of this theme
      * @return string
      */
-    function getDisplayName() {
+    function getDisplayName()
+    {
         return 'Parergon Theme';
     }
 
@@ -22,7 +71,8 @@ class ParergonThemePlugin extends ThemePlugin {
      * Get the description of this plugin
      * @return string
      */
-    function getDescription() {
+    function getDescription()
+    {
         return 'OJS Theme for the Parergon Journal';
     }
 }

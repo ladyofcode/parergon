@@ -1,0 +1,142 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    height: 100%;
+    max-width: 600px;
+}
+
+.header-container h1 {
+    font-size: 4rem;
+}
+
+.header-container p {
+    max-width: 800px;
+}
+
+.header-container a {
+    display: block;
+    color: var(--gold-secondary);
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.header-image {
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+
+@media @desktop {
+
+    .header-wrapper {
+
+        justify-content: space-between;
+    }
+
+    .header-image {
+        margin: 0
+    }
+
+    .header-container h1 {
+        font-size: 4.8rem;
+    }
+}
+
+.cta {
+    border: none;
+    margin: 1.6rem 0;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2px;
+    color: var(--text-light);
+    font-size: 1.6rem;
+    font-family: var(--font-sans-serif);
+    background-color: var(--dark-primary);
+    box-shadow: -4px 4px 0px 2px var(--gold-secondary);
+}
+
+@media @desktop {
+
+    .header-container h1 {
+        margin-top: 8rem;
+        margin-bottom: 6.4rem;
+    }
+
+    .header-container h2 {
+        margin-top: 6.4rem;
+    }
+
+    .header-wrapper {
+        margin-top: 8rem;
+        flex-direction: row;
+    }
+
+    .header-wrapper img {
+        max-width: 30%;
+    }
+
+}
+
+/* Globe styles */
+
+.home-globe-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100% + 16rem);
+    // background-color: antiquewhite;
+    z-index: -8;
+    overflow: hidden;
+}
+
+.home-globe {
+    position: absolute;
+    opacity: 0.08;
+    margin: 0 auto;
+    top: -480px;
+    width: 200vw;
+    max-width: 1200px;
+
+}
+
+.home-globe img {
+    width: 100%;
+    height: auto;
+    animation: rotating-globe 360s linear infinite;
+}
+
+@keyframes rotating-globe {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 460px) {
+    .home-globe {
+        top: -640px;
+        animation: rotating-globe 480s linear infinite;
+    }
+}
+
+@media @desktop {
+    .home-globe {
+        opacity: 0.05;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media @wide-desktop {
+    .home-globe {
+        top: -600px;
+    }
+}

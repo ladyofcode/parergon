@@ -1,0 +1,124 @@
+.about-first-container,
+.about-second-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-second-container {
+    margin-top: 3.2rem !important;
+}
+
+.about-first-container img,
+.about-second-container img {
+    background-color: var(--grey-secondary);
+    padding: 1.6rem;
+    border-radius: 4px;
+}
+
+.board {
+    background-color: var(--grey-secondary);
+    border-radius: 4px;
+    padding: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.board h3 {
+    margin-top: 2.4rem;
+}
+
+.board-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.board-bio img {
+    height: 120px;
+}
+
+.role {
+    margin-bottom: 1rem;
+}
+
+.role p {
+    margin-bottom: 0 !important;
+}
+
+.role p:nth-child(2) {
+    font-style: italic;
+}
+
+@media @desktop {
+
+    .about-first-container,
+    .about-second-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .about-first-container div,
+    .about-second-container div {
+        max-width: 66.666%;
+    }
+
+    .about-first-container img,
+    .about-second-container img {
+        padding: 4.8rem 1.6rem;
+    }
+
+    .about-first-container h2,
+    .about-second-container h2 {
+        margin-top: 0;
+    }
+
+    .about-first-container img,
+    .about-second-container img {
+        max-width: 436px;
+    }
+
+    .about-first-container img {
+        margin-left: 4.8rem;
+    }
+
+    .about-second-container img {
+        margin-right: 4.8rem;
+
+    }
+
+    .board {
+        padding: 4rem !important;
+    }
+
+    .board h3 {
+        text-align: left;
+    }
+
+    .board-bio {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .board-bio div {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .role-img {
+        margin-bottom: 0 !important
+    }
+
+    .role-img p {
+        margin-left: 1rem;
+    }
+
+}
