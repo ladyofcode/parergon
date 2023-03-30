@@ -2,7 +2,7 @@
 
 <div class="home-globe-container">
     <div class="home-globe">
-        <img src="{$baseUrl}/plugins/themes/parergon/templates/images/globe-home.png" />
+        <img src="{$baseUrl}/plugins/themes/parergon/templates/images/globe_home.png" />
     </div>
 </div>
 
@@ -19,7 +19,7 @@
                 <a href="https://muse.jhu.edu/journal/309">View current issue</a>
                 <a href="https://muse.jhu.edu/issue/19344">View sample issue</a>
                 
-                <a href="{$baseUrl}/about/submissions">
+                <a href="https://parergon.org/index.php/parergon/about/submissions">
                     <button class="cta">Submit article</button>
                 </a>
             </div>
