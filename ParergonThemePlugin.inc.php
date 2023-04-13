@@ -30,8 +30,6 @@ class ParergonThemePlugin extends ThemePlugin
             return false;
         }
 
-        // $journal = $request->getJournal();
-
         $issueDao = DAORegistry::getDAO('IssueDAO');
         $context = Application::get()->getRequest()->getContext();
 
@@ -45,15 +43,6 @@ class ParergonThemePlugin extends ThemePlugin
         } else {
             $issue = $templateMgr->getTemplateVars('issue');
         }
-
-        // Get the journal
-        // $context = Application::get()->getRequest()->getContext();
-
-        // // Get the current issue
-        // $issue = $issueDao->getCurrent($context->getId());
-
-        // // Assign the issue to the template
-        // $templateMgr->assign('currentIssue', $issue);
 
         return false;
     }

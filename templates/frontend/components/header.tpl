@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-
+<html>
 {include file="frontend/components/headerHead.tpl"}
 
+<body>
 <nav id="main-nav">
     <div class="nav-container">
         <a class="logo" href="{$baseUrl}">
