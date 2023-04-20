@@ -32,7 +32,7 @@
                         {translate key="about.onlineSubmissions.submissionActions" newSubmission=$newSubmission viewSubmissions=$viewSubmissions}
                     {else}
                         {capture assign="login"}<a
-                            href="{url page="login"}">{translate key="about.onlineSubmissions.login"}</a>{/capture}
+href="https://parergon.org/index.php/parergon/submission/wizard">{translate key="about.onlineSubmissions.login"}</a>{/capture}
                         {capture assign="register"}<a
                             href="{url page="user" op="register"}">{translate key="about.onlineSubmissions.register"}</a>{/capture}
                         {translate key="about.onlineSubmissions.registrationRequired" login=$login register=$register}
