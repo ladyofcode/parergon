@@ -10,7 +10,7 @@
  * @uses $currentContext Journal|Press The current journal or press
  * @uses $submissionChecklist array List of requirements for submissions
  *}
- 
+
 {include file="frontend/components/header.tpl" pageTitle="about.submissions"}
 
 <div class="wrapper">
@@ -55,7 +55,8 @@ href="{url page="submissions"}">{translate key="about.onlineSubmissions.login"}<
 
         <p>Select back issues of <em>Parergon</em> (Vol. 28, 2011-Vol. 37, 2020) are available via a print-on-demand
             service. Each back issue costs $130.00 AUD (including postage and handling). To purchase a back issue please
-            <a href="mailto:info@anzamems.org">email the ANZAMEMS Executive Administrator</a>, Dr Marina Gerzic.</p>
+            <a href="mailto:info@anzamems.org">email the ANZAMEMS Executive Administrator</a>, Dr Marina Gerzic.
+</p>
 
         {if $submissionChecklist}
             <div class="submission_checklist">
