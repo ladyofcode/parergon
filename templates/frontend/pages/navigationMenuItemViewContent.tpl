@@ -12,6 +12,8 @@
 
 {if $title == "About"}
 	{include file="frontend/pages/about.tpl"}
+{elseif $title == "Announcements"}
+	{include file="frontend/pages/announcements.tpl"}
 {elseif $title == "Login"}
 	{include file="frontend/pages/userLogin.tpl"}
 {elseif $title == "Register"}
