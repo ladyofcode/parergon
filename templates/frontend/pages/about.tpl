@@ -46,6 +46,21 @@
             </div>
         </section>
 
+        <section class="about-first-container">
+
+        <div>
+        <h2>SCImago Journal Rank</h2>
+        <p>
+        The SCImago Journal Rank is an indicator of the journal's prestige, relative to other scholarly journals in its field. It is based on the number of citations received by articles published in the journal. The ranking is developed from information contained in the citation database Scopus (Elsevier B.V.).
+</p>
+        </div>
+
+        <a href="https://www.scimagojr.com/journalsearch.php?q=16200154702&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=16200154702" alt="SCImago Journal &amp; Country Rank"  /></a>
+
+        
+        
+        </section>
+
         <section class="board">
             <h2>Editorial board</h2>
             <h3>Editors</h3>
