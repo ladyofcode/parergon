@@ -110,11 +110,6 @@
             </div>
 
             <div class="role">
-                <p>Joost Daalder</p>
-                <p>Flinders University</p>
-            </div>
-
-            <div class="role">
                 <p>David Garrioch</p>
                 <p>Monash University</p>
             </div>
@@ -132,11 +127,6 @@
             <div class="role">
                 <p>Jean E. Howard</p>
                 <p>Columbia University</p>
-            </div>
-
-            <div class="role">
-                <p>Elizabeth Jeffreys</p>
-                <p>Exeter College, Oxford</p>
             </div>
 
             <div class="role">
@@ -187,11 +177,6 @@
             <div class="role">
                 <p>Jocelyn Wogan-Browne</p>
                 <p>Fordham University</p>
-            </div>
-
-            <div class="role">
-                <p>Richard Yeo</p>
-                <p>Griffith University</p>
             </div>
 
             <div class="role">
