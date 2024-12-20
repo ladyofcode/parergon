@@ -53,9 +53,8 @@ href="{url page="submission" op="wizard"}">{translate key="about.onlineSubmissio
             Institutional subscriptions, can also be found on the <a href="https://www.anzamems.org/">same page</a>.
         </p>
 
-        <p>Select back issues of <em>Parergon</em> (Vol. 28, 2011-Vol. 37, 2020) are available via a print-on-demand
-            service. Each back issue costs $130.00 AUD (including postage and handling). To purchase a back issue please
-            <a href="mailto:info@anzamems.org">email the ANZAMEMS Executive Administrator</a>, Dr Marina Gerzic.
+        <p>Hardcopies of select back issues of Parergon are available. To purchase a back issue please
+            <a href="mailto:info@anzamems.org">email the ANZAMEMS Executive Administrator, Dr Marina Gerzic</a>.
 </p>
 
         {if $submissionChecklist}
