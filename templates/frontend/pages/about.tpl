@@ -96,7 +96,7 @@
 
             <div class="role">
                 <p>Peter Anstey</p>
-                <p>University of Sydney</p>
+                <p>Australian Catholic University</p>
             </div>
 
             <div class="role">
